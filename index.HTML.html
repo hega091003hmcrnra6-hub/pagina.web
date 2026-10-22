@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+    <div class="cuadrito-color">
+  <h3>Modificar Fondo</h3>
+  <p id="codigo-color">#FFFFFF</p>
+  <button onclick="cambiarFondo()">Color Aleatorio</button>
+</div>
+<script>
+  function cambiarFondo() {
+    // Genera un código hexadecimal aleatorio
+    const colorHex = '#' + Math.floor(Math.random()*16777215).toString(16);
+    document.body.style.backgroundColor = colorHex;
+    document.getElementById('codigo-color').textContent = colorHex.toUpperCase();
+  }
+</script>
+
+<style>
+  .cuadrito-color {
+    border: 2px solid #1abc9c;
+    background-color: white; /* Para que el cuadro resalte si el fondo cambia */
+    padding: 20px;
+    border-radius: 8px;
+    width: 200px;
+    text-align: center;
+    font-family: sans-serif;
+    margin: 10px;
+  }
+  .cuadrito-color button {
+    background-color: #1abc9c;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+</style>
+
+<script>
+  // Pide el nombre al abrir o recargar la página
+  const nombreUsuario = prompt("Por favor, introduce tu nombre:") || "Invitado";
+  
+  document.getElementById('saludo-personal').innerHTML = `Bienvenido/a, <br><strong>${nombreUsuario}</strong> ✨`;
+</script>
+
+<style>
+  .cuadrito-usuario {
+    border: 2px solid #9b59b6;
+    padding: 20px;
+    border-radius: 8px;
+    width: 220px;
+    text-align: right;
+    font-size: 1.2rem;
+    font-family: sans-serif;
+    margin: 10px;
+    line-height: 1.5;
+  }
+</style>
+<div class="cuadrito-bienvenida" id="bienvenida">Hola...</div>
+
+<script>
+  const hora = new Date().getHours();
+  let mensaje = "¡Hola!";
+
+  if (hora >= 6 && hora < 12) {
+    mensaje = "¡Buenos días! 🌅";
+  } else if (hora >= 12 && hora < 20) {
+    mensaje = "¡Buenas tardes! ☀️";
+  } else {
+    mensaje = "¡Buenas noches! 🌙";
+  }
+
+  document.getElementById('bienvenida').textContent = mensaje;
+</script>
+
+<style>
+  .cuadrito-bienvenida {
+    border: 2px solid #2ecc71;
+    padding: 20px;
+    border-radius: 8px;
+    width: 250px;
+    text-align: center;
+    font-size: 1.3rem;
+    font-family: sans-serif;
+    margin: 10px;
+    background-color: #f4fff7;
+  }
+</style>
+
+<div class="cuadrito" id="reloj">Cargando hora...</div>
+
+<script>
+  function actualizarHora() {
+    const ahora = new Date();
+    const horaFormateada = ahora.toLocaleTimeString();
+    document.getElementById('reloj').textContent = horaFormateada;
+  }
+  // Actualiza cada 1000 milisegundos (1 segundo)
+  setInterval(actualizarHora, 1000);
+  actualizarHora(); // Ejecución inicial
+</script>
+
+<style>
+  .cuadrito {
+    border: 2px solid #3498db;
+    padding: 20px;
+    border-radius: 8px;
+    width: 200px;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: sans-serif;
+    margin: 10px;
+  }
+</style>
+<div style="font-size: 80px; text-align: center; animation: saltar 0.5s infinite alternate;">
+  🦘
+</div>
+
+<style>
+  @keyframes saltar {
+    from { transform: translateY(0); }
+    to { transform: translateY(-30px); } /* Sube 30 píxeles */
+  }
+</style>
+<!-- Cambia el número de teléfono después de 'phone=' -->
+<a href="https://wa.me" class="btn-whatsapp" target="_blank">💬</a>
+
+
+
+
+</head>
+<body style="background-color: aquamarine;">
+<header>
+   
+<div style="display: flex; justify-content: center;">
+<img src="c:\indexarm - copia - la mera buena - copia (2)\imagenes\IMG-20250330-WA0028.jpg" alt="alo" widch="259" height="259">
+</div>
+<div style="display: flex; justify-content: right;">
+<img src="c:\indexarm - copia - la mera buena - copia (2)\imagenes\IMG-20251012-WA0012.jpg" alt="yo1" widch="259" height="259">
+</div>
+<div style="display: flex; justify-content: left;">
+<img src="c:\indexarm - copia - la mera buena - copia (2)\imagenes\IMG-20250809-WA0008.jpg" alt="yo2" widch="259" height="259">
+</div>
+<div style="display: flex; justify-content: center;">
+<img src="c:\indexarm - copia - la mera buena - copia (2)\imagenes\Foto de Armando.jpg" alt="to3" widch="259" height="259">
+</div>
+
+    <ul>
+ <h1><p style="color:blue;">Mis gustos</p></h1>
+</header>
+<nav>
+<ol>
+<li><p style="color:hsl(0, 0%, 0%); font-size: 25px ;" > Amigos</li>
+<li><p style="color:#000000; font-size: 25px ;" >Allyson</style></li>
+<li><p style="color:#000000; font-size: 25px;" >Raúl</style></li>
+<li><p style="color:oklab(0% 0 0); font-size: 25px;" >René</style></li>
+<li><p style="color:#000000; font-size: 25px;" >Yael</style></li>
+<li><p style="color:#000000; font-size: 25px;" >Rafael</style></li>
+<li><p style="color:#000000;">Bailar</style></li>
+<li><p style="color:#000000;">Ir a bailes</style></li>
+<li><p style="color:rgb(0, 0, 0);">Ir a cabalgatas</style></li>
+<li><p style="color:#000000;">Dormir</style></li>
+<li><p style="color:hsl(0, 0%, 0%);">Comer</style></li>
+<li><p style="color:#000000;">Ver ami novia</style></li>
+<li><p style="color:hwb(0 0% 100%);">Estar con mi novia</style></li>
+<li><p style="color:hsl(0, 0%, 0%);">Montar a caballo</style></li>
+<li><p style="color:#000000;">Escuchar música</style></li>
+<li><p style="color:#000000;">Salir</style></p>
+</ol>
+</nav>
+</nav>
+<section>
+</section>
+ <head>
+
+          <a href="file:///C:/Users/PC_08/Documents/Pr%C3%A1cticas504JoselyneNieves/Practica2/indexarm/Untitled-4.html">Mi gusto por montar a caballo </a>    
+        </head>
+        <ul></ul>
+         <head>
+          <a href="file:///C:/Users/PC_08/Documents/Pr%C3%A1cticas504JoselyneNieves/Practica2/indexarm/Untitled-3.html">Mi gusto por ir a cabalgatas</a>   
+        </head>
+        <ul></ul>
+        <head>
+          <a href="file:///C:/Users/PC_08/Documents/Pr%C3%A1cticas504JoselyneNieves/Practica2/indexarm/Untitled-5.html">Mi gusto por ver a mi novia</a>   
+        </head>
+        <ul></ul>
+
+<div style="display: flex; justify-content: center;">
+<img src="c:\indexarm - copia - la mera buena - copia (2)\imagenes\IMG-20260918-WA9884.jpg" alt="alo"widch="300" height="300">
+</div>
+</body style="background-color: aquamarine;">
+</html>
+<ul>
+<div style="display: flex; justify-content: center;">
+<h2><p style="color:hsl(60, 39%, 25%);">Misión:Soy un estudiante y con ganas de aprender,mi misión es echarle ganas a la escuela a las tareas y trabajos</p>
+</div>
+<hr>
+<div style="display: flex; justify-content: center;">
+<h3><p style="color:hsl(22, 95%, 16%);">Visión:En 5 años me veo como programador,también como veterinario o agrónomo con caballos,ganados,terrenos con un rancho y una familia</p>
+</div><span></span>
+<hr>
+</header>
+<h1><p style="color:blanchedalmond; font-size: 55px;">INFANCIA</p></h1>
+<table border="1" style="background-color: blueviolet;">
+    <thead>
+        <tr>
+        </tr>
+    </body>
+<div style="display:flex;justify-content: center;">
+<table border="2">
+    <tr>
+        <th>Amigos</th>
+        <th>Nombres</th>
+        <th>Imagen</th>
+    </tr>
+    <tr>
+       <td>1</td>
+    <td>Marlon</td>
+   </tr>
+    <tr>
+
+    <td>2</td>
+    <td>Gabriel</td>
+    </tr>
+    <tr>
+       <td>3
+    <td>Luis</td>
+    <td><img src="c:\indexarm - copia - la mera buena - copia (2)\imagenes\IMG-20251020-WA0032.jpg" alt="alo" widch="150" height="150">
+</div></td>
+    </tr>
+    <tr>
+
+</table>
+ <hr>
+<h3><p style="color:blanchedalmond; font-size: 55px;">SECUNDARIA</p></h1>
+<table border="1" style="background-color: blueviolet;">
+    <thead>
+        <tr>
+        </tr>
+    </body>
+<div style="display:flex;justify-content: center;">
+<table border="2">
+    <tr>
+        <th>Amigos</th>
+        <th>Nombres</th>
+        <th>Imagen</th>
+    </tr>
+    <tr>
+       <td>1
+    <td>Poncho</td>
+    <td><div><img src="c:\indexarm - copia - la mera buena - copia (2)\imagenes\IMG-20260129-WA0024.jpeg" alt="alo" widch="150" height="150">
+</div></td>
+
+</tr>
+<tr>
+
+    <td>2</td>
+    <td>Alan</td>
+    </tr>
+    <tr>
+       <td>3
+    <td>Izamar</td>
+    </tr>
+    <tr>
+       </table>
+      <hr>
+      <h1><p style="color:blanchedalmond; font-size: 55px;">PREPARATORIA</p></h1>
+<table border="1" style="background-color: blueviolet;">
+    <thead>
+        <tr>
+        </tr>
+    </body>
+<div style="display:flex;justify-content: center;">
+<table border="2">
+    <tr>
+        <th>Amigos</th>
+        <th>Nombres</th>
+        <th>Imagen</th>
+</tr>
+<tr>
+
+    <td>1</td>
+    <td>Raúl</td>
+
+    </tr>
+    <tr>
+       <td>2
+    <td>René</td>
+    </tr>
+    <tr>
+       <td>3
+    <td>Yael</td>
+    <td><div></div><img src="c:\indexarm - copia - la mera buena - copia (2)\imagenes\Foto de Armando.jpg" alt="alo" widch="150" height="150">
+</div></td>
+    </tr>
+    <tr>
+</table> 
+
+<section>
+<p id="Nombre">Armando Hernández González</p>
+<ul></ul>
+<head>
+<a href="file:///C:/Users/PC_08/Documents/Pr%C3%A1cticas504JoselyneNieves/Practica2/indexarm/index-1-copia.html"><button class="btn-moderno">mi pagina web</button></a>
+</section>
+</head>
+<ol></ol>
+<b><p"nombre">Armando</p></b>
+<i><p"twitter">@Armando</p></i>
+<u><p"correo">hega091003hmcrnra67</p></u>
+
+<!DoCTYpe html>
+<video width="640" height="300" controls>
+    <source src="c:\indexarm - copia - la mera buena - copia (2)\imagenes\Download.mp4">
+</video>
+<div style="margin-bottom: 40px;">
+<audio controls>
+    <source src="c:\indexarm - copia - la mera buena - copia (2)\imagenes\Antonio Aguilar - Alondra (Audio Oficial) [kd69ayDhmDo].mp3">
+</source>
+</audio>
+</div>
+<!DoCTYpe html>
+
+<html lang="es">
+
+<head>
+
+<meta charset"utf-8">
+<title>encuesta-mi pagína web</title>
+<style>
+</style>
+</head>
+<body>
+<h1>cuestionario de mi pagína web</h1>
+<form action="#"method="POST">
+<div class="pregunta">
+<label>1.¿Cómo te pareció mi página web?</label><br>
+<input type="radio" name="p1"value="bien"required>Bien
+<input type="radio" name="p1"value="regular">Regular
+<input type="radio" name="p1"value="mal">Mal
+</div>
+<div class="pregunta">
+<label>2.¿Te gustó mi página?</label><br>
+<input type="radio" name="p2"value="si">Si
+<input type="radio" name="p2"value="no">No
+<input type="radio" name="p2"value="máso">Más o menos
+</div>
+<div class="pregunta">
+<label>3.¿Me conóces?</label><br>
+<input type="radio" name="p3"value="si">Si
+<input type="radio" name="p3"value="no">No
+</div>
+<div class="pregunta">
+<label>4.¿Has ido a algún baile?</label><br>
+<input type="radio" name="p4"value="si">Si
+<input type="radio" name="p4"value="no">No
+</div>
+<div class="pregunta">
+<label>5.¿A ti también te gustan los caballos?</label><br>
+<input type="radio" name="p5"value="si">Si
+<input type="radio" name="p5"value="no">No
+</div>
+<div class="pregunta">
+<label>6.De la lista selecciona qué música te gusta</label><br>
+<input type="checkbox" name="p6"value="banda">Banda<br>
+<input type="checkbox" name="p6"value="norteño">Norteño<br>
+<input type="checkbox" name="p6"value="reggaeton">Reggaeton
+</div>
+<div class="pregunta">
+<label>7.De la lista selecciona qué que tanto duermes</label><br>
+<input type="checkbox" name="p6"value="mucho">Mucho<br>
+<input type="checkbox" name="p6"value="poco">Poco<br>
+<input type="checkbox" name="p6"value="Casi no duermo">Casi no duermo
+</div>
+<div class="pregunta">
+<label>8.De la lista selecciona qué tanto te gusta la banda </label><br>
+<input type="checkbox" name="p6"value="mucho">Mucho<br>
+<input type="checkbox" name="p6"value="poco">Poco<br>
+<input type="checkbox" name="p6"value="no soy tan fan">No soy tan fan 
+</div>
+<div class="pregunta">
+<label>9.De la lista selecciona qué tanto te gusta bailar</label><br>
+<input type="checkbox" name="p6"value="poco">Poco<br>
+<input type="checkbox" name="p6"value="mucho">Mucho<br>
+<input type="checkbox" name="p6"value="casi nose bailar">Casi nose bailar
+</div>
+<div class="pregunta">
+<label>10.De la lista selecciona qué tanto te gustan los caballos</label><br>
+<input type="checkbox" name="p6"value="mucho">Mucho<br>
+<input type="checkbox" name="p6"value="poco">Poco<br>
+<input type="checkbox" name="p6"value="me dan miedo">Me dan miedo<br>
+</div>
+<div class="pregunta">
+<label>11.¿Cómo te llamas?</label><br>
+<input type="text" name="p11" style="width:100%"
+placeholder="Tu nombre"required>
+</div>
+<div class="pregunta">
+<label>12.¿Cuál es tu música favorita?</label><br>
+<input type="text" name="p12" style="width:100%"
+placeholder="Escribe tu música favorita"required>
+</div>
+<div class="pregunta">
+<label>13.¿Cuál es tu comida favorita?</label><br>
+<input type="text" name="p13" style="width:100%"
+</div>
+<div class="pregunta">
+<label>14.¿Qué música te gusta bailar?</label><br>
+<input type="text" name="p14" style="width:100%"
+</div>
+<div class="pregunta">
+<label>15.¿Cuándo estás aburrido a dónde sales?</label><br>
+<textarea name="p15"rows="2"
+style="width:100%"></textarea> 
+</div>
+
+<div class="pregunta">
+<label>16.¿Tienes novia?</label><br>
+<input type="radio"name="p16"value="si">Si
+<input type="radio"name="p16"value="no">No
+</div>
+<div class="pregunta">
+<label>17.¿Has montado alguna vez a caballo?</label><br>
+<input type="radio"name="p17"value="si">Si
+<input type="radio"name="p17"value="no">No
+</div>
+<div class="pregunta">
+<label>18.¿Has ido a una cabalgata?</label><br>
+<input type="radio"name="p18"value="si">Si
+<input type="radio"name="p18"value="no">No
+</div>
+<div class="pregunta">
+<label>19.¿Sabes que es una cabalgata?</label><br>
+<textarea name="p19"rows="2"
+style="width:100"></textarea>
+</div>
+<div class="pregunta">
+<label>20.¿Te gusta salir mucho?</label><br>
+<input type="radio"name="p20"value="si">Si,mucho
+<input type="radio"name="p20"value="no">No,poco
+</div>
+
+<br>
+<button type="submit" style="padding:12px 20px; background:#1a73e8;color: white;border:none;border:-radius:8px;font-size:16px">Enviar</button>
+<button type="reset" style="padding:12px 20px;border-radius:8px;font-size:16px">Borrar</button>
+
+</form>
+</body>
+</html>
+<button id="huir" style="position: absolute; padding: 10px 20px; font-size: 16px; cursor: pointer; transition: all 0.2s;">
+  ¡Hazme clic si puedes! 
+</button>
+
+<script>
+  const boton = document.getElementById('huir');
+  boton.addEventListener('mouseover', () => {
+    const x = Math.random() * (window.innerWidth - boton.offsetWidth);
+    const y = Math.random() * (window.innerHeight - boton.offsetHeight);
+    boton.style.left = `${x}px`;
+    boton.style.top = `${y}px`;
+  });
+</script>
